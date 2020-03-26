@@ -1,0 +1,15 @@
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <label>
+    <%= f.radio_button :mvfd, autofocus: true, autcomplete: "にく" %>にく</label>
+    <label><%= f.radio_button :mvfd, autofocus: true, autcomplete: "やさい" %>やさい</label>
+    <label><%= f.radio_button :mvfd, autofocus: true, autcomplete: "さかな" %>さかな</label>
+    <label><%= f.radio_button :mvfd, autofocus: true, autcomplete: "のみもの" %>のみもの</label>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>

@@ -1,0 +1,12 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese" rel="stylesheet">
+</head>
+
+<body class="indexbody">
+  <% @foods.each do |food| %>
+        <div class="foods">
+          <%= link_to food.name, food_path(food.id), class: "foods__list" %>
+        </div>
+  <% end %>
+</body>
+

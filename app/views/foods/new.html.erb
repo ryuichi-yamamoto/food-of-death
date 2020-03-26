@@ -1,0 +1,17 @@
+<div class="food_title">
+  入力してね
+</div>
+
+<%= form_with model: @food, class: :form, local: true do |form| %>
+  <label>
+  <%# <%= form.radio_button :mvfd, "にく" にく </label> %>
+  <%# <label><%= form.radio_button :mvfd, "やさい" やさい</label> %>
+  <%# <label><%= form.radio_button :mvfd, "さかな" さかな</label> %>
+  <%# <label><%= form.radio_button :mvfd, "のみもの" のみもの</label> %>
+  <%= form.text_field :name, placeholder: :なんてもの, class: :form_name %>
+  <%= form.text_field :unit, placeholder: :単位, class: :form_unit %>
+  <%= form.number_field :death, placeholder: :致死量, class: :form_death %>
+  <%= form.text_area :description, placeholder: :説明, class: :form_description %>
+  <%= form.submit '完成！', class: :form_btn %>
+<% end %>
+

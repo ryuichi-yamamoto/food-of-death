@@ -1,0 +1,25 @@
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodOfDeath</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__home">
+      <%= link_to "　", root_path , class: "header__title" %>
+      <div class="header__create">
+      <%= link_to "　", new_food_path, class: "header__edit" %>
+    </header>
+    <div>
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
