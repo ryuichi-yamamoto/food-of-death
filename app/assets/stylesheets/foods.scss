@@ -69,6 +69,8 @@ body {
 // 下記はnew(記事作成ページ)の記載
 .mojitachi {
   background-image: url(bg_pattern1_aozora.png);
+  margin: 0;
+  padding: 0;
   .moji {
     &__tsu {
       position: fixed;
