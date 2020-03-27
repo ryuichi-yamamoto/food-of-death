@@ -1,10 +1,29 @@
-<div class="ctt_title">
-  投稿の編集
-</div>
-<%= form_with model: @food, class: :form, local: true do |form| %>
-  <%= form.text_field :name, placeholder: :なんてもの, class: :form_name %>
-  <%= form.text_field :unit, placeholder: :単位, class: :form_unit %>
-  <%= form.number_field :death, placeholder: :致死量, class: :form_death %>
-  <%= form.text_area :description, placeholder: :説明, class: :form_description %>
-  <%= form.submit '完成！', class: :form_btn %>
-<% end %>
+<body class="mojitachi">
+  <div clas="moji">
+    <div class="moji__tsu"></div>
+    <div class="moji__ku"></div>
+    <div class="moji__kotsu"></div>
+    <div class="moji__te"></div>
+    <div class="moji__mi"></div>
+    <div class="moji__yo"></div>
+    <div class="moji__u"></div>
+    <div class="moji__bikkuri"></div>
+  </div>
+
+  <div class="ctt_title">
+    投稿の編集
+  </div>
+
+  <%= form_with model: @food, class: :eform, local: true do |form| %>
+    <div class="eform__name-icon"></div>
+    <%= form.text_field :name, placeholder: :なんてもの, class: :eform__name %>
+    <div class="eform__unit-icon"></div>
+    <%= form.text_field :unit, placeholder: :単位, class: :eform__unit %>
+    <div class="eform__death-icon"></div>
+    <%= form.number_field :death, placeholder: :致死量, class: :eform__death %>
+    <div class="eform__description-icon"></div>
+    <%= form.text_area :description, placeholder: :説明, class: :eform__description %>
+    <div class="eform__btn-icon"></div>
+    <%= form.submit '完成！', class: :eform__btn %>
+  <% end %>
+</body>
