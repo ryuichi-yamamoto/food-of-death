@@ -1,17 +1,15 @@
-<body class="mojitachi">
+<body class="emojitachi">
   <div clas="moji">
     <div class="moji__tsu"></div>
     <div class="moji__ku"></div>
-    <div class="moji__kotsu"></div>
-    <div class="moji__te"></div>
-    <div class="moji__mi"></div>
-    <div class="moji__yo"></div>
+    <div class="moji__ri"></div>
+    <div class="moji__na"></div>
+    <div class="moji__o"></div>
+    <div class="moji__so"></div>
     <div class="moji__u"></div>
-    <div class="moji__bikkuri"></div>
   </div>
 
   <div class="ctt_title">
-    投稿の編集
   </div>
 
   <%= form_with model: @food, class: :eform, local: true do |form| %>
@@ -23,7 +21,10 @@
     <%= form.number_field :death, placeholder: :致死量, class: :eform__death %>
     <div class="eform__description-icon"></div>
     <%= form.text_area :description, placeholder: :説明, class: :eform__description %>
-    <div class="form__btn-icon"></div>
+    <div class="eform__btn-icon"></div>
     <%= form.submit '完成！', class: :eform__btn %>
   <% end %>
+  <div class="sougen">
+    <footer class="sougen__ber"></footer>
+  </div>
 </body>
