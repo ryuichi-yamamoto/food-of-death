@@ -1,3 +1,5 @@
+
+// 下記は固定部分ヘッダーの記述
 body {
   .header {
     &__title {
@@ -22,23 +24,25 @@ body {
     &__create {
       z-index: 1;
       width: 100px;
-      height: 90px;
-      background-size: 100px;
-      background-image: url("dangomushi.png");
+      height: 120px;
+      background-size: 110px;
+      background-image: url("flower_tanpopo_watage_solo.png");
       position: fixed;
-      top: 25px;
-      right: 15px;
+      top: 5px;
+      right: 2px;
     }
     
     &__edit {
       text-decoration: none;
       position: fixed;
-      top: 55px;
-      right: 85px;
+      top: 96px;
+      right: 56px;
+      font-size: 20px;
     }
   }
 }
 
+// 下記はindex（ホーム画面）の記述
 .indexbody {
   background-image: url(pattern_shibafu.png);
   .foods {
@@ -51,13 +55,447 @@ body {
     display: inline-block;
     text-align: center;
     margin-left: 100px;
+    padding: 60px 20px;
     &__list{
       text-decoration: none;
-      line-height: 150px;
       color: black;
+      font-size: 20px;
       font-family: 'Kosugi Maru', sans-serif;
 
     }
   }
 }
 
+// 下記はnew(記事作成ページ)の記載
+.mojitachi {
+  background-image: url(bg_pattern1_aozora.png);
+  .moji {
+    &__tsu {
+      position: fixed;
+      top: 150px;
+      left: 5%;
+      background-image: url(hiragana_33_tsu.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__ku {
+      position: fixed;
+      top: 60px;
+      left: 17%;
+      background-image: url(hiragana_13_ku.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__kotsu {
+      position: fixed;
+      top: 120px;
+      left: 31%;
+      background-image: url(hiragana_87_tsu_small.png);
+      height: 60px;
+      width: 60px;
+    }
+    &__te {
+      position: fixed;
+      top: 30px;
+      left: 41%;
+      background-image: url(hiragana_34_te.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__mi {
+      position: fixed;
+      top: 120px;
+      right: 31%;
+      background-image: url(hiragana_62_mi.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__yo {
+      position: fixed;
+      top: 90px;
+      right: 17%;
+      background-image: url(hiragana_68_yo.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__u {
+      position: fixed;
+      top: 150px;
+      right: 5%;
+      background-image: url(hiragana_03_u.png);
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .form {
+    margin-top: 300px;
+    &__name-icon {
+      z-index: -3;
+      background-image: url(wood_kirikabu.png);
+      height: 300px;
+      width: 400px;
+      position: fixed;
+      bottom: 150px;
+      left: 2%;
+    }
+    &__name {
+      background-color: transparent;
+      height: 80px;
+      width: 220px;
+      position: fixed;
+      bottom: 330px;
+      left: 7%;
+      border-radius: 30px;
+      border: 0;
+    }
+    
+    &__death-icon {
+      z-index: -2;
+      background-image: url(animal_bear_higuma.png);
+      background-size: 350px;
+      height: 350px;
+      width: 350px;
+      position: fixed;
+      left: 37%;
+      bottom: 150px;
+    }
+    &__death {
+      background-color: transparent;
+      height: 200px;
+      width: 300px;
+      position: fixed;
+      left: 38%;
+      bottom: 260px;
+      border-radius: 90px;
+      border: 0;
+    }
+      
+    &__unit-icon {
+      z-index: -1;
+      background-image: url(hamster_perl_white.png);
+      background-size: 200px;
+      height: 250px;
+      width: 200px;
+      position: fixed;
+      left: 68%;
+      bottom: 150px;
+    }
+    &__unit {
+      background-color: transparent;
+      height: 90px;
+      width: 155px;
+      position: fixed;
+      left: 69%;
+      bottom: 190px;
+      border-radius: 90px;
+      border: 0;
+
+    }
+    &__description {
+      background-color: transparent;
+      height: 140px;
+      width: 70%;
+      position: fixed;
+      bottom: 1%;
+      left: 1%;
+      border: 0;
+    }
+
+    &__btn-icon {
+      background-image: url(mizutamari_hansya.png);
+      background-size: 250px;
+      height: 90px;
+      width: 220px;
+      position: fixed;
+      right: 3%;
+      bottom: 30px;
+    }
+    &__btn {
+      background-color: transparent;
+      height: 62px;
+      width: 178px;
+      position: fixed;
+      right: 4%;
+      bottom: 37px;
+      border-radius: 30px;
+      border: 0;
+    }
+    ::placeholder{
+      font-family: 'Kosugi Maru', sans-serif;
+      text-align: center;
+      font-size: 30px;
+      color:#ccc
+    }
+  }
+  .sougen {
+    &__ber {
+      z-index: -5;
+      background-image: url(bg_ground.png);
+      background-size: 1700px;
+      height: 250px;
+      width: 1600px;
+      position: fixed;
+      bottom: 0;
+      left: -25;
+    }
+  }
+}
+
+// 下記はshow(詳細ページ)の記述
+.showBody {
+  background-image: url(bg_heaven_tengoku.jpg);
+  background-size: 1500px;
+  font-family: 'Kosugi Maru', sans-serif;
+  &__name {
+    font-size: 40px;
+    width: 600px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 40px;
+    text-align: center;
+    margin-left: -300px;
+  }
+  &__death {
+    &__num {
+      font-size: 300px;
+      height: 400px;
+      width: 500px;
+      position: fixed;
+      left: 30%;
+      top: 100px;
+      text-align: center;
+      margin-left: -250px;
+    }
+    &__unit {
+      font-size: 300px;
+      height: 400px;
+      width: 400px;
+      position: fixed;
+      right: 30%;
+      top: 100px;
+      text-align: center;
+      margin-right: -200px;
+    }
+  }
+  &__description {
+    font-size: 20px;
+    height: 220px;
+    width: 98%;
+    position: fixed;
+    top: 480px;
+    left: 10px;
+    word-wrap: break-word;
+    overflow: scroll;
+  }
+  &__manage {
+    &__editIcon {
+      background-image: url("kamisama.png");
+      background-size: 200px;
+      height: 230px;
+      width: 200px;
+      position: fixed;
+      top: 270px;
+      left: 10px;
+    }
+    &__edit {
+      text-decoration: none;
+      font-size: 30px;
+      position: fixed;
+      top: 457px;
+      left: 40px;
+    }
+    &__deleteIcon {
+      background-image: url("kirakira1.png");
+      background-size: 200px;
+      height: 60px;
+      width: 70px;
+      position: fixed;
+      top: 350px;
+      right: 30px;
+    }
+    &__delete {
+      text-decoration: none;
+      font-size: 20px;
+      position: fixed;
+      top: 377px;
+      right: 42px;
+    }
+  }
+}
+
+// 下記はsedit(詳細ページ)の記述
+
+.mojitachi {
+  background-image: url(bg_pattern1_aozora.png);
+  .moji {
+    &__tsu {
+      position: fixed;
+      top: 150px;
+      left: 5%;
+      background-image: url(hiragana_33_tsu.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__ku {
+      position: fixed;
+      top: 60px;
+      left: 17%;
+      background-image: url(hiragana_13_ku.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__kotsu {
+      position: fixed;
+      top: 120px;
+      left: 31%;
+      background-image: url(hiragana_87_tsu_small.png);
+      height: 60px;
+      width: 60px;
+    }
+    &__te {
+      position: fixed;
+      top: 30px;
+      left: 41%;
+      background-image: url(hiragana_34_te.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__mi {
+      position: fixed;
+      top: 120px;
+      right: 31%;
+      background-image: url(hiragana_62_mi.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__yo {
+      position: fixed;
+      top: 90px;
+      right: 17%;
+      background-image: url(hiragana_68_yo.png);
+      height: 100px;
+      width: 100px;
+    }
+    &__u {
+      position: fixed;
+      top: 150px;
+      right: 5%;
+      background-image: url(hiragana_03_u.png);
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .eform {
+    margin-top: 300px;
+    &__name-icon {
+      z-index: -3;
+      background-image: url(wood_kirikabu.png);
+      height: 300px;
+      width: 400px;
+      position: fixed;
+      bottom: 150px;
+      left: 2%;
+    }
+    &__name {
+      background-color: transparent;
+      height: 80px;
+      width: 220px;
+      position: fixed;
+      bottom: 330px;
+      left: 7%;
+      border-radius: 30px;
+      // border: 0;
+    }
+    
+    &__death-icon {
+      z-index: -2;
+      background-image: url(animal_bear_higuma.png);
+      background-size: 350px;
+      height: 350px;
+      width: 350px;
+      position: fixed;
+      left: 37%;
+      bottom: 150px;
+    }
+    &__death {
+      background-color: transparent;
+      height: 200px;
+      width: 300px;
+      position: fixed;
+      left: 38%;
+      bottom: 260px;
+      border-radius: 90px;
+      // border: 0;
+    }
+      
+    &__unit-icon {
+      z-index: -1;
+      background-image: url(hamster_perl_white.png);
+      background-size: 200px;
+      height: 250px;
+      width: 200px;
+      position: fixed;
+      left: 68%;
+      bottom: 150px;
+    }
+    &__unit {
+      background-color: transparent;
+      height: 90px;
+      width: 155px;
+      position: fixed;
+      left: 69%;
+      bottom: 190px;
+      border-radius: 90px;
+      // border: 0;
+
+    }
+    &__description {
+      background-color: transparent;
+      height: 140px;
+      width: 70%;
+      position: fixed;
+      bottom: 1%;
+      left: 1%;
+      // border: 0;
+    }
+
+    &__btn-icon {
+      background-image: url(mizutamari_hansya.png);
+      background-size: 250px;
+      height: 90px;
+      width: 220px;
+      position: fixed;
+      right: 3%;
+      bottom: 30px;
+    }
+    &__btn {
+      background-color: transparent;
+      height: 62px;
+      width: 178px;
+      position: fixed;
+      right: 4%;
+      bottom: 37px;
+      border-radius: 30px;
+      // border: 0;
+    }
+    ::placeholder{
+      font-family: 'Kosugi Maru', sans-serif;
+      text-align: center;
+      font-size: 30px;
+      color:#ccc
+    }
+  }
+  .sougen {
+    &__ber {
+      z-index: -5;
+      background-image: url(bg_ground.png);
+      background-size: 1700px;
+      height: 250px;
+      width: 1600px;
+      position: fixed;
+      // bottom: 0;
+      left: -25;
+    }
+  }
+}

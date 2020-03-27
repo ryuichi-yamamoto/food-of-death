@@ -1,16 +1,26 @@
-<div class="foodName">
-  <%= @food.name %>
-</div>
-<div class="foodDeath">
-  <%= @food.death %>
-</div>
-<div class="foodUnit">
-  <%= @food.unit %>
-</div>
-<div class="foodDescription">
-  <%= simple_format @food.description %>
-</div>
-<div class="foodManage">
-  <%= link_to "編集", edit_food_path(@food.id), class: "foodManage_edit" %>
-  <%= link_to "削除", food_path(@food.id), method: :delete, class: "foodManage_delete" %>
-</div>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese" rel="stylesheet">
+</head>
+
+<body class="showBody">
+  <div class="showBody__name">
+    <%= @food.name %>
+  </div>
+  <div class="showBody__death">
+    <div class="showBody__death__num">
+      <%= @food.death %>
+    </div>
+    <div class="showBody__death__unit">
+      <%= @food.unit %>
+    </div>
+  </div>
+  <div class="showBody__description">
+    <%= simple_format @food.description %>
+  </div>
+  <div class="showBody__manage">
+    <div  class="showBody__manage__editIcon"></div>
+    <%= link_to "　　　　　", edit_food_path(@food.id), class: "showBody__manage__edit" %>
+    <div  class="showBody__manage__deleteIcon"></div>
+    <%= link_to "　", food_path(@food.id), method: :delete, class: "showBody__manage__delete", data: {confirm: "消えちゃうよ！いいの？"} %>
+  </div>
+</body>
