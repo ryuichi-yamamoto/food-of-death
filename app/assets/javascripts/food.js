@@ -34,3 +34,5 @@ $(document).ready(function () {
       $('.emojitachi').css("background-position",posX+"px 0px");
   }, 1);
 });
+
+
