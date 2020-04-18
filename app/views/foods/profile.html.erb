@@ -1,0 +1,63 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese" rel="stylesheet">
+</head>
+
+<body class="mojitachi">
+  <div class="moji">
+    <div class="moji__tsu"></div>
+    <div class="moji__ku"></div>
+    <div class="moji__kotsu"></div>
+    <div class="moji__te"></div>
+    <div class="moji__mi"></div>
+    <div class="moji__yo"></div>
+    <div class="moji__u"></div>
+  </div>
+
+  <%= link_to "　", new_food_path , class: "retorisetsu" %>
+
+  <div class="siro">
+    <div class="new-bee">
+    ハチさんの顔を押すとホームに戻れるよ！
+    </div>
+    <div class="new-tanpopo">
+    タンポポのタネを押すと『ちしりょう』を作れるよ！
+    </div>
+    <div class="new-ki">
+    きりかぶを押して『たべもの』や<br>『のみのも』の名前を入れてね！
+    </div>
+    <div class="new-kuma">
+    クマさんの体を押して<br>『ちしりょう』を入れてね！
+    </div>
+    <div class="new-hamu">
+    ハムスターさんのおなか<br>を押してちしりょうの<br>『たんい』を入れてね！
+    </div>
+    <div class="new-kusa">
+    このへんの草を押して<br>　『せつめい』を書いてね！
+    </div>
+    <div class="new-mizu">
+    全部入れ終わったら<br>水たまりを押してね！
+    </div>
+  </div>
+
+  <%= form_with model: @food, class: :form, local: true do |form| %>
+    <label>
+    <%# <%= form.radio_button :mvfd, "にく" にく </label> %>
+    <%# <label><%= form.radio_button :mvfd, "やさい" やさい</label> %>
+    <%# <label><%= form.radio_button :mvfd, "さかな" さかな</label> %>
+    <%# <label><%= form.radio_button :mvfd, "のみもの" のみもの</label> %>
+    <div class="form__name-icon"></div>
+    <%= form.text_field :name, class: :form__name %>
+    <div class="form__unit-icon"></div>
+    <%= form.number_field :death, class: :form__death %>
+    <div class="form__death-icon"></div>
+    <%= form.text_field :unit, class: :form__unit %>
+    <div class="form__description-icon"></div>
+    <%= form.text_area :description, class: :form__description %>
+    <div class="form__btn-icon"></div>
+    <%= form.submit '', class: :form__btn %>
+  <% end %>
+  <div class="sougen">
+    <footer class="sougen__ber"></footer>
+  </div>
+</body>
+

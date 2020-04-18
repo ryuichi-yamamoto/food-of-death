@@ -3,6 +3,9 @@ class FoodsController < ApplicationController
   def index
     @foods = Food.all
   end
+  
+  def profile
+  end
 
   def new
     @food = Food.new
