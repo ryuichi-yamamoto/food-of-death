@@ -14,10 +14,6 @@
 
   <%= form_with model: @food, class: :form, local: true do |form| %>
     <label>
-    <%# <%= form.radio_button :mvfd, "にく" にく </label> %>
-    <%# <label><%= form.radio_button :mvfd, "やさい" やさい</label> %>
-    <%# <label><%= form.radio_button :mvfd, "さかな" さかな</label> %>
-    <%# <label><%= form.radio_button :mvfd, "のみもの" のみもの</label> %>
     <div class="form__name-icon"></div>
     <%= form.text_field :name, class: :form__name %>
     <div class="form__unit-icon"></div>
