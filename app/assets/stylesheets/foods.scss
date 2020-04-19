@@ -56,6 +56,57 @@ body {
 // 下記はindex（ホーム画面）の記述
 .indexbody {
   background-image: url(pattern_shibafu.png);
+  .indexprofile {
+    position: fixed;
+    width: 50px;
+    height: 75px;
+    top: 90px;
+    left: 30px;
+    z-index: 1;
+    text-decoration: none;
+  }
+  .reindex{
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    text-decoration: none;
+  }
+  .indexsiro {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    height: 200vh;
+    width: 100%;
+    opacity: 0.65;
+    .new-bee {
+      position: fixed;
+      width: 25%;
+      top: 30px;
+      left: 60px;
+    }
+    .new-tanpopo {
+      position: fixed;
+      width: 30%;
+      top: 100px;
+      right: 10px;
+    }
+    .index-kanban {
+      font-size: 50px;
+      position: fixed;
+      width: 100vw;
+      text-align: center;
+      top: 45%;
+    }
+    .index-setsu {
+      position: fixed;
+      bottom: 20%;
+      right: 5%;
+    }
+  }
   .foods {
     background-image: url(wood_kanban.png);
     background-size: 200px;
@@ -152,7 +203,7 @@ body {
     opacity: o;
   }
 
-  .siro {
+  .newsiro {
    font-family: 'Kosugi Maru', sans-serif;
    font-size: 30px;
     z-index: 2;
@@ -436,6 +487,26 @@ body {
 // 下記はedit(編集ページ)の記述
 .emojitachi {
   background-image: url(bg_yozora_night_sky.jpg);
+  .reedit {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    text-decoration: none;
+    background-color: violet;
+    height: 100vh;
+    width: 100%;
+  }
+  .editsiro {
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  height: 200vh;
+  width: 100%;
+  opacity: 0.65;
+  }
   .moji {
     &__tsu {
       position: fixed;

@@ -1,0 +1,26 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese" rel="stylesheet">
+</head>
+
+<body class="indexbody">
+  <%= link_to "　", root_path , class: "reindex" %>
+  <div class="indexsiro">
+    <div class="new-bee">
+    ハチさんの顔を押すとホームに戻れるよ！
+    </div>
+    <div class="new-tanpopo">
+    タンポポのタネを押すと『ちしりょう』を作れるよ！
+    </div>
+    <div class="index-kanban">
+    見たい『ちしりょう』を押してね！
+    </div>
+    <div class="index-setsu">
+    『ちしりょう』を作って<br>　　　　　　看板を増やそう！
+    </div>
+  </div>
+  <% @foods.each do |food| %>
+        <div class="foods">
+          <%= link_to food.name, food_path(food.id), class: "foods__list" %>
+        </div>
+  <% end %>
+</body>

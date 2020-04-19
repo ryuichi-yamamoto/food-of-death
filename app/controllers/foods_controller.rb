@@ -3,12 +3,16 @@ class FoodsController < ApplicationController
   def index
     @foods = Food.all
   end
-  
-  def profile
-  end
 
+  def indexprofile
+    @foods = Food.all
+  end
+  
   def new
     @food = Food.new
+  end
+  
+  def newprofile
   end
 
   def create
@@ -22,6 +26,9 @@ class FoodsController < ApplicationController
 
   def edit
     @food = Food.find(params[:id])
+  end
+
+  def editprofile
   end
 
   def update
