@@ -204,8 +204,8 @@ body {
   }
 
   .newsiro {
-   font-family: 'Kosugi Maru', sans-serif;
-   font-size: 30px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
     z-index: 2;
     position: absolute;
     top: 0;
@@ -407,7 +407,7 @@ body {
   background-size: cover;
   font-family: 'Kosugi Maru', sans-serif;
   &__name {
-    font-size: 80px;
+    font-size: 4em;
     width: 600px;
     height: 50px;
     position: fixed;
@@ -418,7 +418,7 @@ body {
   }
   &__death {
     &__num {
-      font-size: 300px;
+      font-size: 1500%;
       height: 50%;
       width: 50%;
       position: fixed;
@@ -428,7 +428,7 @@ body {
       margin-left: -25%;
     }
     &__unit {
-      font-size: 300px;
+      font-size: 1500%;
       height: 50%;
       width: 50%;
       position: fixed;
@@ -487,25 +487,57 @@ body {
 // 下記はedit(編集ページ)の記述
 .emojitachi {
   background-image: url(bg_yozora_night_sky.jpg);
+  .edittorisetsu {
+    width: 70px;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    left: 31px;
+    text-decoration: none;
+  }
   .reedit {
     position: fixed;
     top: 0;
     z-index: 3;
     text-decoration: none;
-    background-color: violet;
     height: 100vh;
     width: 100%;
   }
   .editsiro {
-  font-family: 'Kosugi Maru', sans-serif;
-  font-size: 30px;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  background-color: white;
-  height: 200vh;
-  width: 100%;
-  opacity: 0.65;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    height: 200vh;
+    width: 100%;
+    opacity: 0.65;
+    .edit-bee {
+      position: fixed;
+      width: 25%;
+      top: 30px;
+      left: 60px;
+    }
+    .edit-tanpopo {
+      position: fixed;
+      width: 30%;
+      top: 100px;
+      right: 10px;
+    }
+    .edit-edit {
+      font-size: 50px;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      bottom: 25%;
+    }
+    .edit-ok {
+      position: fixed;
+      bottom: 5%;
+      right: 10%;
+    }
   }
   .moji {
     &__tsu {
@@ -721,4 +753,40 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+
+.content{
+  margin: 0 auto;
+  padding: 40px;
+  a {
+    background-color: yellow;
+  }
+}
+.modal{
+  display: none;
+  height: 120vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg{
+  background: rgba(255, 255, 255, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  &--newbee {
+    font-size: 70px;
+    color: black;
+    
+  }
+}
+.modal__content{
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
 }

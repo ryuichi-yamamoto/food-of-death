@@ -1,5 +1,7 @@
+
+
 <body class="emojitachi">
-  <%= link_to "もい",  editprofile_foods_path , class: "edittorisetsu" %>
+  <%= link_to "　",  editprofile_foods_path , class: "edittorisetsu" %>
   <div clas="moji">
     <div class="moji__tsu"></div>
     <div class="moji__ku"></div>
@@ -23,11 +25,48 @@
     <div class="eform__description-icon"></div>
     <%= form.text_area :description, placeholder: :説明, class: :eform__description %>
     <div class="eform__btn-icon"></div>
-    <%= form.submit '完成！', class: :eform__btn %>
+    <%= form.submit '　', class: :eform__btn %>
   <% end %>
   <div class="sougen">
     <footer class="sougen__ber"></footer>
   </div>
+
+
+
+  <div class="content">
+      <a class="js-modal-open" href="">もいもい</a>
+  </div>
+  <div class="modal js-modal">
+      <div class="modal__bg js-modal-close"></div>
+        <a class="modal__bg--newbee">
+        ハチさんの顔を押すとホームに戻れるよ！
+        </a>
+        <div class="modal__bg--newtanpopo">
+        タンポポのタネを押すと『ちしりょう』を作れるよ！
+        </div>
+        <div class="modal__bg--indexkanban">
+        見たい『ちしりょう』を押してね！
+        </div>
+        <div class="modal__bg--indexsetsu">
+        『ちしりょう』を作って<br>　　　　　　看板を増やそう！
+        </div>
+      </div><!--modal__inner-->
+  </div><!--modal-->
+
+
+<script type="text/javascript">
+$(function(){
+  $('.js-modal-open').on('click',function(){
+      $('.js-modal').fadeIn();
+      return false;
+  });
+  $('.js-modal-close').on('click',function(){
+      $('.js-modal').fadeOut();
+      return false;
+  });
+});
+</script>
+
 </body>
 
 

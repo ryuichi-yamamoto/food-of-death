@@ -4,6 +4,7 @@
 
 <body class="indexbody">
   <%= link_to "　", indexprofile_foods_path, class: "indexprofile" %>
+
   <% @foods.each do |food| %>
         <div class="foods">
           <%= link_to food.name, food_path(food.id), class: "foods__list" %>
