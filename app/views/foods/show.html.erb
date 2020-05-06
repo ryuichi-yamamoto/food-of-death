@@ -55,12 +55,10 @@
         <%= link_to "　", food_path(@food.id), method: :delete, id: 'item-delete-btn' %>
 <div id="overlay">
   <div id="modalWindow">
-    <div class='show-modal-flame1'>
-      <button id="modal-close-btn">やっぱり<br>消さない！</button>
-    </div>
-    <div class='show-modal-flame2'>
-      <button id="delete-comformation-btn">消しちゃう</button>
-    </div>
+    <div class='kesanai-kanban'></div>
+    <button id="modal-close-btn">やっぱり<br>消さない！</button>
+    <div class='kesu-kanban'></div>
+    <button id="delete-comformation-btn">消す</button>
   </div>
 </div>
 
