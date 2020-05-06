@@ -11,7 +11,6 @@ body {
     }
     
     &__home {
-      z-index: 1;
       width: 100px;
       height: 100px;
       background-size: 100px;
@@ -22,7 +21,6 @@ body {
     }
 
     &__create {
-      z-index: 1;
       width: 100px;
       height: 120px;
       background-size: 110px;
@@ -42,7 +40,6 @@ body {
 
     &__torisetsu {
       background-image: url("setsumeisyo.png");
-      z-index: 1;
       width: 80px;
       height: 85px;
       background-size: 80px;
@@ -123,7 +120,63 @@ body {
       color: black;
       font-size: 20px;
       font-family: 'Kosugi Maru', sans-serif;
+    }
+  }
 
+  // 下記はmodalの記述
+
+  .content{
+    a {
+      position: fixed;
+      top: 90px;
+      left: 33px;
+      width: 65px;
+      height: 80px;
+      transform:rotate(-12deg);
+      text-decoration: none;
+    }
+  }
+  .modal{
+    display: none;
+    height: 120vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .modal__wrap{
+    background: rgba(255, 255, 255, 0.7);
+    height: 120vh;
+    position: absolute;
+    width: 100%;
+  }
+  .modal__bg {
+    position: absolute;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
+    top: 0px;
+    &--indexBee {
+      position: fixed;
+      width: 25%;
+      top: 30px;
+      left: 60px;
+    }
+    &--indexTanpopo {
+      position: fixed;
+      width: 30%;
+      top: 100px;
+      right: 10px;
+    }
+    &--indexKanban {
+      font-size: 50px;
+      position: fixed;
+      width: 100vw;
+      text-align: center;
+      top: 45%;
+    }
+    &--indexSetsu {
+      position: fixed;
+      bottom: 20%;
+      right: 5%;
     }
   }
 }
@@ -204,8 +257,8 @@ body {
   }
 
   .newsiro {
-   font-family: 'Kosugi Maru', sans-serif;
-   font-size: 30px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
     z-index: 2;
     position: absolute;
     top: 0;
@@ -399,6 +452,81 @@ body {
       left: -25;
     }
   }
+
+// 下記はmodalの記述
+
+  .content{
+    a {
+      position: fixed;
+      top: 90px;
+      left: 33px;
+      width: 65px;
+      height: 80px;
+      transform:rotate(-12deg);
+      text-decoration: none;
+    }
+  }
+  .modal{
+    display: none;
+    height: 120vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .modal__wrap{
+    background: rgba(255, 255, 255, 0.7);
+    height: 120vh;
+    position: absolute;
+    width: 100%;
+  }
+  .modal__bg {
+    position: absolute;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
+    top: 0px;
+    &--newBee {
+      position: fixed;
+      width: 25%;
+      top: 30px;
+      left: 60px;
+    }
+    &--newTanpopo {
+      position: fixed;
+      width: 30%;
+      top: 100px;
+      right: 10px;
+    }
+    &--newKi {
+      position: fixed;
+      width: 30%;
+      bottom: 300px;
+      left: 7%;
+    }
+    &--newKuma {
+      position: fixed;
+      width: 30%;
+      bottom: 320px;
+      left: 38%;
+    }
+    &--newHamu {
+      position: fixed;
+      width: 30%;
+      bottom: 180px;
+      right: 5%;
+    }
+    &--newKusa {
+      font-size: 35;
+      position: fixed;
+      bottom: 70px;
+      left: 40px;
+    }
+    &--newMizu {
+      font-size: 20px;
+      position: fixed;
+      bottom: 50px;
+      right: 35px;
+    }
+  }
 }
 
 // 下記はshow(詳細ページ)の記述
@@ -407,7 +535,7 @@ body {
   background-size: cover;
   font-family: 'Kosugi Maru', sans-serif;
   &__name {
-    font-size: 80px;
+    font-size: 4em;
     width: 600px;
     height: 50px;
     position: fixed;
@@ -418,7 +546,7 @@ body {
   }
   &__death {
     &__num {
-      font-size: 300px;
+      font-size: 1500%;
       height: 50%;
       width: 50%;
       position: fixed;
@@ -428,7 +556,7 @@ body {
       margin-left: -25%;
     }
     &__unit {
-      font-size: 300px;
+      font-size: 1500%;
       height: 50%;
       width: 50%;
       position: fixed;
@@ -440,7 +568,7 @@ body {
   }
   &__description {
     font-size: 20px;
-    height: 220px;
+    height: 30%;
     width: 98%;
     position: fixed;
     bottom: 5px;
@@ -455,15 +583,16 @@ body {
       height: 230px;
       width: 200px;
       position: fixed;
-      bottom: 220px;
-      left: 10px;
+      bottom: 30%;
+      left: 5%;
     }
     &__edit {
       text-decoration: none;
-      font-size: 30px;
+      height: 50px;
+      width: 180px;
       position: fixed;
-      bottom: 233px;
-      left: 40px;
+      bottom: 30%;
+      left: 7%;
     }
     &__deleteIcon {
       background-image: url("kirakira1.png");
@@ -471,8 +600,8 @@ body {
       height: 60px;
       width: 70px;
       position: fixed;
-      bottom: 300px;
-      right: 30px;
+      bottom: 30%;
+      right: 5%;
     }
     &__delete {
       text-decoration: none;
@@ -482,30 +611,151 @@ body {
       right: 42px;
     }
   }
+
+  // 下記はmodalの記述
+
+  .content{
+    #showtori {
+      position: fixed;
+      top: 90px;
+      left: 33px;
+      width: 65px;
+      height: 80px;
+      transform:rotate(-12deg);
+      text-decoration: none;
+    }
+  }
+  #modal01{
+    display: none;
+    height: 120vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .modal__wrap{
+    background: rgba(255, 255, 255, 0.7);
+    height: 120vh;
+    position: absolute;
+    width: 100%;
+  }
+  .modal__bg {
+    position: absolute;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
+    top: 0px;
+    &--showBee {
+      position: fixed;
+      width: 25%;
+      top: 30px;
+      left: 60px;
+    }
+    &--showTanpopo {
+      position: fixed;
+      width: 30%;
+      top: 100px;
+      right: 10px;
+    }
+    &--showKumo {
+      position: fixed;
+      width: 30%;
+      bottom: 15%;
+    }
+    &--showHoshi {
+      position: fixed;
+      width: 30%;
+      bottom: 25%;
+      right: 5%;
+    }
+  }
+
+  // 下記はmodal2の記述
+
+  .content{
+    #showkesu {
+      position: fixed;
+      bottom: 310px;
+      right: 42px;
+      width: 65px;
+      text-decoration: none;
+    }
+  }
+  #modal02{
+    display: none;
+    height: 120vh;
+    position: fixed;
+    top: 300px;
+    width: 100%;
+  }
+  .modal__wrap2{
+    background: rgba(255, 255, 255, 0.7);
+    height: 120vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .modal__bg2 {
+    position: absolute;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
+    top: 0px;
+  }
+
 }
 
 // 下記はedit(編集ページ)の記述
 .emojitachi {
   background-image: url(bg_yozora_night_sky.jpg);
+  .edittorisetsu {
+    width: 70px;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    left: 31px;
+    text-decoration: none;
+  }
   .reedit {
     position: fixed;
     top: 0;
     z-index: 3;
     text-decoration: none;
-    background-color: violet;
     height: 100vh;
     width: 100%;
   }
   .editsiro {
-  font-family: 'Kosugi Maru', sans-serif;
-  font-size: 30px;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  background-color: white;
-  height: 200vh;
-  width: 100%;
-  opacity: 0.65;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    height: 200vh;
+    width: 100%;
+    opacity: 0.65;
+    .edit-bee {
+      position: fixed;
+      width: 25%;
+      top: 30px;
+      left: 60px;
+    }
+    .edit-tanpopo {
+      position: fixed;
+      width: 30%;
+      top: 100px;
+      right: 10px;
+    }
+    .edit-edit {
+      font-size: 50px;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      bottom: 25%;
+    }
+    .edit-ok {
+      position: fixed;
+      bottom: 5%;
+      right: 10%;
+    }
   }
   .moji {
     &__tsu {
@@ -682,7 +932,7 @@ body {
       border: 0;
       outline: none;
     }
-    ::placeholder{
+    ::placeholder {
       font-family: 'Kosugi Maru', sans-serif;
       text-align: center;
       font-size: 30px;
@@ -699,6 +949,63 @@ body {
       position: fixed;
       bottom: 0;
       left: -25;
+    }
+  }
+
+// 下記はnodalの記述
+
+  .content{
+    a {
+      position: fixed;
+      top: 90px;
+      left: 33px;
+      width: 65px;
+      height: 80px;
+      transform:rotate(-12deg);
+      text-decoration: none;
+    }
+  }
+  .modal{
+    display: none;
+    height: 120vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .modal__wrap{
+    background: rgba(255, 255, 255, 0.7);
+    height: 120vh;
+    position: absolute;
+    width: 100%;
+  }
+  .modal__bg {
+    position: absolute;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 30px;
+    top: 0px;
+    &--editBee {
+      position: fixed;
+      width: 25%;
+      top: 30px;
+      left: 60px;
+    }
+    &--editTanpopo {
+      position: fixed;
+      width: 30%;
+      top: 100px;
+      right: 10px;
+    }
+    &--editEdit {
+      font-size: 50px;
+      position: fixed;
+      width: 100%;
+      text-align: center;
+      bottom: 20%;
+    }
+    &--editOk {
+      position: fixed;
+      bottom: 5%;
+      right: 10%;
     }
   }
 }
@@ -722,3 +1029,91 @@ body {
     opacity: 1;
   }
 }
+
+
+
+#overlay {
+  display: none;
+  height: 120vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  height: 120vh;
+  }
+  
+  #modal-open-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    bottom: 30%;
+    right: 5%;
+  }
+  #modalWindow {
+    .kesanai-kanban {
+      background-image: url("wood_kanban3.png");
+      background-size: 500px;
+      width: 500px;
+      height: 380px;
+      position: fixed;
+      z-index: -1;
+      top: 30%;
+      left: 2%;
+    }
+    #modal-close-btn {
+      position: fixed;
+      font-family: 'Kosugi Maru', sans-serif;
+      font-size: 85px;
+      top: 30%;
+      left: 2%;
+      height: 260px;
+      width: 440px;
+      margin-top: 80px;
+      margin-left: 36px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+      appearance: none;
+    }
+    .kesu-kanban {
+      background-image: url("wood_kanban2.png");
+      background-size: 150px;
+      width: 150px;
+      height: 120px;
+      position: fixed;
+      z-index: -1;
+      top: 30%;
+      right: 2%;
+      margin-top: 240px;
+    }
+    #delete-comformation-btn {
+      position: fixed;
+      font-family: 'Kosugi Maru', sans-serif;
+      height: 80px;
+      width: 130px;
+      font-size: 25px;
+      top: 30%;
+      right: 2%;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+      appearance: none;
+      margin-top: 265px;
+      margin-right: 10px;
+    }
+  }
+  
+  #item-delete-btn {
+  //削除ボタンの非表示
+    display: none;
+  }

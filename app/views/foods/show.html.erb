@@ -19,11 +19,80 @@
   </div>
   <div class="showBody__manage">
     <div  class="showBody__manage__editIcon"></div>
-    <%= link_to "　　　　　", edit_food_path(@food.id), class: "showBody__manage__edit" %>
+    <%= link_to "　", edit_food_path(@food.id), class: "showBody__manage__edit" %>
     <div  class="showBody__manage__deleteIcon"></div>
-    <%= link_to "　", food_path(@food.id), method: :delete, class: "showBody__manage__delete", data: {confirm: "消えちゃうよ！いいの？"} %>
   </div>
 </body>
 
 
 
+
+
+  <div class="content">
+      <a id="showtori" class="js-modal-open" href="" data-target="modal01">　</a>
+  </div>
+  <div id="modal01" class="modal js-modal">
+      <div class="modal__wrap js-modal-close"></div>
+      <div class="modal__bg js-modal-close">
+        <div class="modal__bg--showBee">
+        ハチさんの顔を押すとホームに戻れるよ！
+        </div>
+        <div class="modal__bg--showTanpopo">
+        タンポポのタネを押すと『ちしりょう』を作れるよ！
+        </div>
+        <div class="modal__bg--showKumo">
+        神様の乗ってる雲を押すと『へんしゅう』できるよ！
+        </div>
+        <div class="modal__bg--showHoshi">
+        黄色い星を押すと記事が消えちゃうよ！
+        </div>
+      </div>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+
+
+    <button id="modal-open-btn">　</button>
+        <%= link_to "　", food_path(@food.id), method: :delete, id: 'item-delete-btn' %>
+<div id="overlay">
+  <div id="modalWindow">
+    <div class='kesanai-kanban'></div>
+    <button id="modal-close-btn">やっぱり<br>消さない！</button>
+    <div class='kesu-kanban'></div>
+    <button id="delete-comformation-btn">消す</button>
+  </div>
+</div>
+
+</body>
+
+
+<script type="text/javascript">
+$(function(){
+    $('.js-modal-open').on('click',function(){
+        $('.js-modal').fadeIn();
+        return false;
+    });
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        return false;
+    });
+});
+
+document.addEventListener(
+  "DOMContentLoaded", e => {
+    let modal_open = document.getElementById("modal-open-btn");
+    modal_open.onclick = function () {
+      $('#overlay').fadeIn();
+      document.getElementById('modal-close-btn').onclick = function () {
+        $('#overlay').fadeOut();
+      };
+      document.getElementById("delete-comformation-btn").onclick = function () {
+        document.getElementById("item-delete-btn").click();
+      };
+    };
+  },
+  false
+);
+
+</script>
+
+</body>
