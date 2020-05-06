@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   collection do
       get 'newprofile'
       get 'indexprofile'
-      get 'editprofile'
     end
   end
 end

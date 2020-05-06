@@ -28,9 +28,6 @@ class FoodsController < ApplicationController
     @food = Food.find(params[:id])
   end
 
-  def editprofile
-  end
-
   def update
     food = Food.find(params[:id])
     food.update(food_params)

@@ -1,7 +1,9 @@
-
+<head>
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese" rel="stylesheet">
+</head>
 
 <body class="emojitachi">
-  <%= link_to "　",  editprofile_foods_path , class: "edittorisetsu" %>
+  <%# <%= link_to "　",  editprofile_foods_path , class: "edittorisetsu" %>
   <div clas="moji">
     <div class="moji__tsu"></div>
     <div class="moji__ku"></div>
@@ -34,22 +36,25 @@
 
 
   <div class="content">
-      <a class="js-modal-open" href="">もいもい</a>
+      <a class="js-modal-open" href="">　</a>
   </div>
   <div class="modal js-modal">
-      <div class="modal__bg js-modal-close"></div>
-        <a class="modal__bg--newbee">
+      <div class="modal__wrap js-modal-close"></div>
+      <div class="modal__bg js-modal-close">
+        <div class="modal__bg--editBee">
         ハチさんの顔を押すとホームに戻れるよ！
-        </a>
-        <div class="modal__bg--newtanpopo">
+        </div>
+        <div class="modal__bg--editTanpopo">
         タンポポのタネを押すと『ちしりょう』を作れるよ！
         </div>
-        <div class="modal__bg--indexkanban">
-        見たい『ちしりょう』を押してね！
+        <div class="modal__bg--editEdit">
+        作った人に『けいい』<br>をはらって作りなおしてね！<br><br>
+        文字や数字を触ると<br>編集ができるよ！
         </div>
-        <div class="modal__bg--indexsetsu">
-        『ちしりょう』を作って<br>　　　　　　看板を増やそう！
+        <div class="modal__bg--editOk">
+        作りなおしたら落とし穴を押してね！
         </div>
+      </div>
       </div><!--modal__inner-->
   </div><!--modal-->
 
