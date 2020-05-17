@@ -20,9 +20,9 @@ https://lethal-dose.herokuapp.com/
 ・食材の削除<br>
 
 ### 使用言語、フレームワーク
-・HTML&Scss
-・JavaScript
-・jQuery
-・Ruby
-・Ruby on rails
+・HTML&Scss<br>
+・JavaScript<br>
+・jQuery<br>
+・Ruby<br>
+・Ruby on rails<br>
 
