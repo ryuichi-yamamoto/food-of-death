@@ -4,6 +4,9 @@
 
 ![LethalDose](https://user-images.githubusercontent.com/61731011/82162684-55a28800-98e1-11ea-88c7-ee5d5d8277c7.png)
 
+![LethalDose2](https://user-images.githubusercontent.com/61731011/82162962-fd6c8580-98e2-11ea-8e10-2f5244be65ee.png)
+
+各ページ、ハチさんの持っている取扱説明書をクリックすると説明文が現れます。
 
 ### 本番環境URL
 https://lethal-dose.herokuapp.com/
