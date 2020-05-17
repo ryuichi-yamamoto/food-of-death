@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# LethalDose(リーサルドーズ)
 
-Things you may want to cover:
+# 本番環境URL
+https://lethal-dose.herokuapp.com/
 
-* Ruby version
+# コンセプト
+食材全てに存在する『致死量』。
+身近でありながら意外と知らない、しかし生死に直結する数字。
+そんな致死量をPOPに共有できる様なサービスを目指し作成しました。
+より多くの方に気軽に利用して頂ける様に、ユーザー登録機能、ログイン機能は無し。
 
-* System dependencies
+# 機能一覧
+・食材の登録【食材名】【致死量】【単位】【説明】
+・食材の編集【食材名】【致死量】【単位】【説明】
+・食材の削除
 
-* Configuration
+# 使用言語、フレームワーク
+・HTML&Scss
+・JavaScript
+・jQuery
+・Ruby
+・Ruby on rails
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
