@@ -2,6 +2,9 @@
 
 # LethalDose(リーサルドーズ)
 
+![LethalDose](https://user-images.githubusercontent.com/61731011/82162684-55a28800-98e1-11ea-88c7-ee5d5d8277c7.png)
+
+
 # 本番環境URL
 https://lethal-dose.herokuapp.com/
 
